@@ -46,12 +46,20 @@
 				<li><a href="#" role="tab" data-toggle="tab">COUNTRIES</a></li>
 				<li><a href="#" role="tab" data-toggle="tab">PUBLICATIONS</a></li>
 			</ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Search..." class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success" id="search">*luup*</button>
-          </form>
+			<div class="navbar-right search-form">
+				<span class="languages">
+					<span class="en selected"><img src="assets/images/en.gif">EN</span>
+					<span class="fr"><img src="assets/images/fr.gif">FR</span>
+				</span>
+				<form class="navbar-form">
+					<span class="calendars"><span class="glyphicon glyphicon-calendar"></span>Calendars</span>
+					<div class="form-group">
+						<input type="text" placeholder="Search..." class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success" id="search"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+			</div>
+
         </div><!--/.navbar-collapse -->
       </div>
 		</div>
@@ -60,37 +68,46 @@
 	<div class="container content-padding">
 		<div class="row">
 			<div class="col-md-12">
-			<h2>Latest news</h2>
+			<h3>Latest news</h3>
 		</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
 				<img src="./assets/images/meeting.png">
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<a href="#">(...) Read more</a>
+				<p class="blue">FATF Targeted Financial Sanctions Experts' meeting</p>
+				<p>23 Jun 2014</p>
+				<p>If implemented effectively, targeted financial sanctions are an important means to deprive terrorist and proliferation financiers of their funds, thereby protecting citizens from the threats of crime, terrorism and </p>
+				<a href="#" class="blue">(...) Read more</a>
 			</div>
 			<div class="col-md-3">
 				<img src="./assets/images/money.png">
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<a href="#">(...) Read more</a>
+				<p class="blue">FATF Public Statement - 27 June 2014</p>
+				<p>16 Jun 2014</p>
+				<p>The FATF has updated its public statement issued in February 2014 which identifies jurisdictions with strategic anti-money laundering and countering the financing of terrorism (AML/CFT) deficiencies.</p>
+				<a href="#" class="blue">(...) Read more</a>
 			</div>
 			<div class="col-md-3">
 				<img src="./assets/images/graph.png">
-				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				<a href="#">(...) Read more</a>
+				<p class="blue">CFATF decides to call for counter measures against Guyana and recognises significant progress made by Belize</p>
+				<p>15 Jun 2014</p>
+				<p>The Caribbean Financial Action Task Force has identified Guyana, as a jurisdiction with strategic AML/CFT deficiencies and has </p>
+				<a href="#" class="blue">(...) Read more</a>
 			</div>
 			<div class="col-md-3">
 				<img src="./assets/images/docs.png">
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<a href="#">(...) Read more</a>
+				<p class="blue">Bosnia and Herzegovina: lack of progress in adopting legislation</p>
+				<p>7 Jun 2014</p>
+				<p>The Committee of Experts on the Evaluation of Anti-Money Laundering Measures and the Financing of Terrorism (MONEYVAL) of the Council of Europe issued a public statement</p>
+				<a href="#" class="blue">(...) Read more</a>
 			</div>
 			<div class="row">
 				<div class="col-md-10">
 
 				</div>
 				<div class="col-md-2">
-					<a href="#">
-						All publications &raquo;
+					<a href="#" class="blue">
+						All publications
+						<span class="glyphicon glyphicon-menu-right"></span>
 					</a>
 				</div>
 			</div>
@@ -131,10 +148,22 @@
 				<div class="col-md-9">
 					<h3>Key publications</h3>
 						<div class="row">
-							<div class="col-md-2">
+							<div class="col-md-3">
 								<img src="./assets/images/doc.png">
 							</div>
-							<div class="col-md-10"></div>
+							<div class="col-md-9">
+								<h3 class="blue">The FATF Recommendations</h3>
+								<p>adopted February 2012</p>
+								<p>International Standards on Combating Money Laundering and the Financing of Terrorism & Proliferation</p>
+							</div>
+						</div>
+						<div class="row">
+							<h5 class="blue">Methodology for Assessing Compliance with the FATF 40 Recommendations and FATF 9 Special Recommendations</h5>
+							<h5 class="blue">FATF Public Statement - 14 February 2014</h5>
+							<p>Jurisdictions for which an FATF call for action applies</p>
+							<h5 class="blue">Improving Global AML/CFT Compliance: on-going process - 14 February 2014</h5>
+							<p>Other monitored jurisdictions</p>
+							<h5 class="blue"><span class="glyphicon glyphicon-download-alt"></span> FATF Annual Report: 2012-2013</h5>
 						</div>
 						<div class="row">
 
@@ -159,16 +188,19 @@
 				<div class="row">
 					<div class="col-md-3">
 						<strong>Reports</strong>
-						<ul>
+						<ul class="blue custom-bullet">
 							<li>Typologies Reports</li>
 							<li>Guidance and Best Practice Reports</li>
 							<li>Mutual Evaluation Reports</li>
 							<li>Risk-Based Approach Reports</li>
 						</ul>
+						<ul class="blue footer-ul">
+							<li>FATF Annual report: 2012-2013</li>
+						</ul>
 					</div>
 					<div class="col-md-3">
 						<strong>About</strong>
-						<ul>
+						<ul class="blue footer-ul">
 							<li>Who we are</li>
 							<li>What we do</li>
 							<li>Members and Observers</li>
@@ -180,7 +212,7 @@
 					</div>
 					<div class="col-md-3">
 						<strong>Frequently asked questions</strong>
-						<ul>
+						<ul class="blue footer-ul">
 							<li>General Questions</li>
 							<li>Member Countries and Observers</li>
 							<li>Money Laundering</li>
@@ -189,7 +221,7 @@
 					</div>
 					<div class="col-md-3">
 						<strong>More</strong>
-						<ul>
+						<ul class="blue footer-ul">
 							<li>FATF Glossary</li>
 							<li>Calendar of events</li>
 							<li>Job Opportunities</li>
@@ -204,10 +236,13 @@
 							Follow us:
 						</div>
 						<div class="col-md-2">
+							<img src="assets/images/fb.gif">
 						</div>
 						<div class="col-md-2">
+							<img src="assets/images/twitter.gif">
 						</div>
 						<div class="col-md-5">
+							<div class="btn">E-mail Alerts</div>
 						</div>
 					</div>
 				</div>
