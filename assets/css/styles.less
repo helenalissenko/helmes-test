@@ -1,9 +1,4 @@
 @headercolor: #4f9eb2;
-.header{
-  height:150px;
-  background-color: white;
-}
-
 .blue-header{
   background-color: #4f9eb2;
   height: 100px;
@@ -189,9 +184,13 @@ h5.blue{
   border-bottom: 2px solid #e2f3f7;
 }
 
-.right{
+.publications-right{
   margin-top:-9px;
   text-align: right;
+}
+
+.right{
+  text-align:right;
 }
 
 .middle{
@@ -274,4 +273,27 @@ h5.blue{
     border-bottom: 1px solid #dddddd;
     padding-bottom: 3px;
   }
+}
+
+@media (max-width: 768px){
+  .blue-header{
+    height: 72px;
+  }
+
+  .col-md-3.col-sm-6.col-xs-12.news img{
+    display:none;
+  }
+
+  .calendars{
+    display:none;
+  }
+
+  .languages{
+    display:none;
+  }
+
+  .nav-tabs>li.active:after{
+    display:none;
+  }
+
 }
