@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             all: {
-                src: ["assets/css/*.less", "assets/css/*.css"],
+                src: ["assets/css/*.css"],
                 dest: "styles.css"
             },
         },
