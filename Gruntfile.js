@@ -1,31 +1,40 @@
-//Grunt is just JavaScript running in node, after all...
 module.exports = function(grunt) {
-
-    // All upfront config goes in a massive nested object.
     grunt.initConfig({
-        // You can set arbitrary key-value pairs.
         distFolder: 'dist',
-        // You can also set the value of a key as parsed JSON.
-        // Allows us to reference properties we declared in package.json.
         pkg: grunt.file.readJSON('package.json'),
-        // Grunt tasks are associated with specific properties.
-        // these names generally match their npm package name.
+
+        less: {
+            options: {
+                paths: ["assets/css/"],
+            },
+            files: {
+                "assets/css/styles.css": "assets/css/styles.less"
+            }
+        },
+
         concat: {
             options: {
                 separator: ';'
             },
             dist: {
-                src: ['/assets/js/*.js'],
+                src: ['assets/js/*.js'],
                 dest: '<%= distFolder %>/main.js'
             }
-        }
-    }); // The end of grunt.initConfig
+        },
 
-    // We've set up each task's configuration.
-    // Now actually load the tasks.
-    // This will do a lookup similar to node's require() function.
+        concat_css: {
+            options: {
+                separator: ';'
+            },
+            all: {
+                src: ["assets/css/*.less", "assets/css/*.css"],
+                dest: "styles.css"
+            },
+        },
+    });
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-concat-css');
 
-    // Register our own custom task alias.
-    grunt.registerTask('build', ['concat']);
+    grunt.registerTask('build', ['less', 'concat', 'concat_css']);
 };
