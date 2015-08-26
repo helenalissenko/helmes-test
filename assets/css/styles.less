@@ -1,4 +1,9 @@
 @headercolor: #4f9eb2;
+
+form.navbar-form{
+  box-shadow:none;
+}
+
 .blue-header{
   background-color: #4f9eb2;
   height: 100px;
@@ -199,7 +204,7 @@ h5.blue{
   font-weight:bold;
 }
 
-li.calendars{
+li.calendars, li.en, li.fr{
   display:none;
 }
 
@@ -305,7 +310,69 @@ li.calendars{
     margin-top: -74px;
   }
 
-  li.calendars{
+  li.calendars, li.fr, li.en{
     display:block;
+  }
+
+  .navbar-right.search-form{
+    z-index: 10;
+    margin-top: -116px;
+    padding-right: 72px;
+    left: 104px;
+  }
+
+  button.navbar-toggle{
+    height: 72px;
+    width: 72px;
+    margin: 0;
+    border-left: 2px solid white;
+    border-radius: 0;
+  }
+
+  span.icon-bar{
+    width:100% !important;
+    background-color: white;
+  }
+
+  .navbar-toggle{
+    padding: 24px 10px;
+    color:white;
+  }
+
+  button#search{
+    margin-top: -39px;
+    float: right;
+  }
+
+  .nav-tabs>li>a{
+    border-radius: 0;
+    width: 103%;
+  }
+
+  li.en, li.fr{
+    margin-left: -105px !important;
+    top: -170px;
+    max-width:100px;
+  }
+
+  ul.nav.nav-tabs.nav-stacked{
+    max-height: 230px;
+  }
+
+  li.selected{
+    background-color: #4f9eb2;
+  }
+
+  .middle{
+    text-align: left;
+  }
+
+  .social img{
+    height:50px;
+  }
+
+  .btn.email{
+    height:50px;
+    line-height: 0.428571;
   }
 }
