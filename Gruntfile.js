@@ -36,5 +36,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-concat-css');
 
-    grunt.registerTask('build', ['less', 'concat', 'concat_css']);
+    grunt.registerTask('default', ['less', 'concat', 'concat_css']);
 };
